@@ -1,0 +1,22 @@
+.container {
+	max-width: 1626px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.site-container {
+	overflow: hidden;
+}
+
+.btn-reset {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.section__title {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 80px;
+	color: #1C2E3D;
+}

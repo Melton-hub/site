@@ -1,0 +1,114 @@
+.featured__videos {
+	padding-top: 149px;
+}
+
+.featured__videos__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: default;
+
+}
+
+.featured__videos__title {
+	margin-bottom: 24px;
+}
+
+.featured__videos__subtitle {
+	margin-bottom: 96px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #788692;
+	max-width: 634px;
+	text-align: center;
+}
+
+.featured__videos .swiper-second {
+	overflow: hidden;
+	width: 100%;
+	padding: 100px 0;
+}
+
+.featured__videos .swiper-slide {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: #E3E3E3;
+	border-radius: 8px;
+	min-height: 551px;
+	max-width: 890px;
+	transition: transform 1s;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.featured__videos .swiper-slide::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60%;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 50%, rgba(0, 0, 0, 0.461617) 100%);
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+
+
+.featured__videos .swiper-slide-active {
+	transform: scaleX(1.16) scaleY(1.2);
+	transition: transform 1s;
+	overflow: hidden;
+}
+
+.featured__videos .swiper-slide-active::after {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.featured__videos .slide-one {
+	background-image: url(/img/featured_videos_one.jpg);
+}
+
+.featured__videos .slide-two {
+	background-image: url(/img/featured_videos_two.jpg);
+}
+
+.featured__videos .slide-three {
+	background-image: url(/img/featured_videos_three.jpg);
+}
+
+.slide-title {
+	position: relative;
+	font-size: 32px;
+	font-weight: 700;
+	color: #FFFFFF;
+	z-index: 1;
+	padding: 0 0 40px 40px;
+	transition: transform 1s;
+	transform: translateY(200px);
+	cursor: default;
+}
+
+.featured__videos .swiper-slide-active .slide-title {
+	transition: transform 1s;
+	transform: translateY(0);
+}
+
+.slide-button {
+	position: absolute;
+	top: 40px;
+	left: 48px;
+	width: 112px;
+	height: 112px;
+	background-image: url(/img/featured_videos_icon_play.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+}

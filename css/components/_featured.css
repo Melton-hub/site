@@ -1,0 +1,132 @@
+.featured {
+	position: relative;
+	height: 100%;
+	background-image: url(/img/featured__background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1080px;
+}
+
+.featured__info {
+	position: relative;
+	padding-top: 604px;
+	max-width: 624px;
+
+}
+
+
+.featured__button__top {
+	display: inline-block;
+	margin: 0 0 16px 0;
+	font-size: 11px;
+	font-weight: 800;
+	line-height: 13px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--white-color);
+	background: #E8594E;
+	border: 1px solid #E8594E;
+	border-radius: 24px;
+	padding: 18px 31px;
+	transition: 0.7s;
+}
+
+.featured__button__top:hover {
+	background: var(--white-color);
+	color: #E8594E;
+}
+
+
+.featured__title {
+	margin: 0 0 16px 0;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 64px;
+	color: var(--white-color);
+}
+
+
+.featured__subtitle {
+	margin: 0 0 40px 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color: var(--white-color);
+}
+
+.featured__button__bottom {
+	font-size: 12px;
+	letter-spacing: 2.18182px;
+	text-transform: uppercase;
+	color: var(--white-color);
+	background-color: #73AFBA;
+	border: 1px solid #73AFBA;
+	border-radius: 8px;
+	padding: 33px 78px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.featured__button__bottom:hover {
+	color: #73AFBA;
+	background-color: var(--white-color);
+}
+
+
+.featured__stories {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(60, 74, 81, 0.9);
+	width: 35%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 127px 0 0 133px;
+
+}
+
+.featured__stories__title {
+	margin: 0 0 96px 0;
+	font-size: 64px;
+	line-height: 80px;
+	color: #FFFFFF;
+	max-width: 368px;
+}
+
+.featured__item {
+	display: flex;
+	align-items: center;
+	padding: 32px 15px 32px 0;
+	border-bottom: 1px solid rgba(227, 227, 227, 0.1);
+}
+
+.featured__last__item {
+	border-bottom: none;
+}
+
+
+.featured__item__talk {
+	margin: 0 0 0 32px;
+}
+
+.featured__text {
+	margin: 0 0 8px 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	color: var(--white-color);
+	max-width: 288px;
+}
+
+.featured__date {
+	font-size: 11px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.502293);
+}
+
+
+
+

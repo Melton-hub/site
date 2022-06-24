@@ -1,0 +1,156 @@
+
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 55px 30px;
+}
+
+.header__social {
+	display: flex;
+	align-items: center;
+}
+
+.social__item:not(:last-child) {
+	margin: 0 40px 0 0;
+}
+
+.social__link {
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: opacity 1s;
+}
+
+.social__link:hover {
+	opacity: 0.7;
+	transition: opacity 1s;
+}
+
+.social__link__fb {
+	background-image: url(/img/icon__fb.svg);
+	width: 11px;
+	height: 20px;
+}
+
+.social__link__tw {
+	background-image: url(/img/icon__tw.svg);
+	width: 20px;
+	height: 17px;
+}
+
+.logo {
+	font-size: 22px;
+	font-weight: 800;
+	line-height: 1px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: var(--white-color);
+	text-transform: uppercase;
+}
+
+.burger {
+	position: relative;
+	width: 48px;
+	height: 10px;
+}
+
+.burger__line {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--white-color);
+	transition: 1s;
+}
+
+.burger:hover .burger__line {
+	background-color: #E8594E;
+}
+
+.burger__line:last-child {
+	top: auto;
+	bottom: 0;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: -150vw;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background-color: #73AFBA;
+	transition: left 0.5s;
+	overflow-y: auto;
+}
+
+.menu__open {
+	left: 0;
+	transition: left 0.5s;
+}
+
+.menu__nav {
+	width: 100%;
+	height: 100%;
+}
+
+.menu__items {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.menu__item {
+	margin-bottom: 20px;
+}
+
+.menu__link {
+	font-size: 40px;
+	font-weight: 700;
+	transition: 0.5s;
+	color: var(--white-color);
+}
+
+.menu__link:hover {
+	color: #000000;
+}
+
+.menu__close {
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	width: 40px;
+	height: 40px;
+}
+
+.menu__close-line {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 3px;
+	background-color: var(--white-color);
+}
+
+.menu__close-line:first-child {
+	transform: rotate(45deg);
+}
+
+.menu__close-line:last-child {
+	transform: rotate(-45deg);
+}
